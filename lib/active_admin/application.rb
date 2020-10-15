@@ -203,7 +203,7 @@ module ActiveAdmin
         admin_dirs = {}
 
         load_paths.each do |path|
-          admin_dirs[path] = [:rb]
+          admin_dirs[path] = ['rb']
         end
 
         routes_reloader = app.config.file_watcher.new([], admin_dirs) do
